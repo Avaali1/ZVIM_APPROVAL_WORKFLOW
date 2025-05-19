@@ -1,0 +1,14 @@
+<mvc:View controllerName="in.compass.vim.ZVIM_APPROVAL_WORKFLOW.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Text text="To Test integrating VIM workflows to SAP My Inbox Fiori "/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

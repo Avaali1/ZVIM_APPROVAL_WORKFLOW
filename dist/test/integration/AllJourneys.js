@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/test/Opa5","./arrangements/Startup","./NavigationJourney"],function(e,a){"use strict";e.extendConfig({arrangements:new a,viewNamespace:"in.compass.vim.ZVIM_APPROVAL.ZVIM_APPROVAL.view.",autoWait:true})});

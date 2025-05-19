@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"],function(n){"use strict";return n.extend("in.compass.vim.ZVIM_APPROVAL_WORKFLOW.controller.Main",{onInit:function(){}})});

@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/test/Opa5"],function(t){"use strict";return t.extend("in.compass.vim.ZVIM_APPROVAL.ZVIM_APPROVAL.test.integration.arrangements.Startup",{iStartMyApp:function(t){var a=t||{};a.delay=a.delay||50;this.iStartMyUIComponent({componentConfig:{name:"in.compass.vim.ZVIM_APPROVAL.ZVIM_APPROVAL",async:true},hash:a.hash,autoWait:a.autoWait})}})});
