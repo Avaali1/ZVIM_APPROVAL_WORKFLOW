@@ -10,6 +10,18 @@ sap.ui.define([
 			var oModel = new JSONModel(Device);
 			oModel.setDefaultBindingMode("OneWay");
 			return oModel;
+		},
+		createODataModel: function () {
+			var sUrl = "/sap/opu/odata/sap/ZMMGW_VDM_SRV/";
+			return new ODataModel(sUrl, {
+				json: true
+			});
+		},
+		createVDMGenericModel: function () {
+			var sUrl = "/sap/opu/odata/sap/ZMMGW_VDM_GENERIC_SRV/";
+			return new ODataModel(sUrl, {
+				json: true
+			});
 		}
 
 	};

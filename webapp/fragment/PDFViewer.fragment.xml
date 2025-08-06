@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Dialog title="{i18n>pdfFile}" contentWidth="800px" contentHeight="900px" resizable="true" draggable="true" horizontalScrolling="true"
+		verticalScrolling="false">
+		<content>
+			<PDFViewer source="{pdf>/PdfUrl}" height="100%">
+				<layoutData>
+					<FlexItemData growFactor="1"/>
+				</layoutData>
+			</PDFViewer>
+		</content>
+		<endButton>
+			<Button text="{i18n>close}" type="Reject" press="onClosePDFDialog" width="8.5rem"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

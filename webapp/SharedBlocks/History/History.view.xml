@@ -1,0 +1,27 @@
+<mvc:View controllerName="in.compass.vim.ZVIM_APPROVAL_WORKFLOW.controller.Main" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form"
+	xmlns="sap.m">
+	<VBox class="sapUiSmallMargin">
+		<Table id="idTable" inset="false" items="{history>/}">
+			<columns>
+				<Column><Text text="{i18n>Name}"/></Column>
+				<Column><Text text="{i18n>Action}"/></Column>
+				<Column><Text text="{i18n>Timestamp}"/></Column>
+			</columns>
+			<items>
+				<ColumnListItem>
+					<cells>
+						<Text text="{history>CURRENT_APPROVER}"/>
+						<Text text="{history>ZAPP_STATUS}"/>
+						<Text text="{history>TIMESTAMP}"/>
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+		<!-- Pagination like bottom buttons -->
+		<HBox justifyContent="Center" class="sapUiSmallMarginTop">
+			<Button text="20" type="Transparent" press="_onPagehistory"/>
+			<Button text="50" type="Transparent" press="_onPagehistory"/>
+			<Button text="100" type="Transparent" press="_onPagehistory"/>
+		</HBox>
+	</VBox>
+</mvc:View>

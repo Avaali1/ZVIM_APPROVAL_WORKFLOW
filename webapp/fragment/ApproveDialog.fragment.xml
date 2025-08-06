@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:u="sap.ui.unified">
+	<Dialog id="decisionDialog" title="Submit Decision" type="Message" contentWidth="60%" contentheight="50%" afterClose="onDialogAfterClose">
+		<VBox class="sapUiSmallMargin">
+			<Label id="lblapp" text=""/>
+			<TextArea id="idText1" placeholder="Add Note" rows="4" maxLength="80" width="100%" height="100%" liveChange="onNoteLiveChange"
+				required="true"/>
+		</VBox>
+		<beginButton>
+			<Button id="Submit" text="Submit" enabled="true" type="Emphasized" press="onSubmit"/>
+		</beginButton>
+		<endButton>
+			<Button text="Cancel" press="onCancel"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

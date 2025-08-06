@@ -1,0 +1,7 @@
+<mvc:View controllerName="in.compass.vim.ZVIM_APPROVAL_WORKFLOW.controller.Main" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form"
+	xmlns="sap.m">
+	<VBox class="sapUiSmallMargin">
+		<TextArea id="idText" placeholder="{comment>/Comments}" rows="8" maxLength="80" width="100%" height="100%" liveChange="onNoteLiveChange"
+			showExceededText="true"/>
+	</VBox>
+</mvc:View>

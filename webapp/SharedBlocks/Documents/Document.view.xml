@@ -1,0 +1,45 @@
+<mvc:View controllerName="in.compass.vim.ZVIM_APPROVAL_WORKFLOW.controller.Main" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	xmlns:f="sap.ui.layout.form" xmlns="sap.m">
+	<HBox justifyContent="SpaceBetween" alignItems="Center">
+		<Title text=""/>
+		<Button icon="sap-icon://add" press="onAddDocument"></Button>
+	</HBox>
+	<Table id="idDocTable" items="{document>/}" mode="None" noDataText="No documents available">
+		<columns>
+			<Column>
+				<Text text="Name"/>
+			</Column>
+			<!--<Column>-->
+			<!--	<Text text="Created On"/>-->
+			<!--</Column>-->
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<Link text="{document>DOCNAME}" press="_onPressDocument" emphasized="true" wrapping="false"/>
+					<!--<Text text="{document>CHANGEDT}:{document>CHANGTIM}" class="sapUiSmallMarginBegin"/>-->
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+	<!--<Button id="Approve" type="Emphasized" text="{i18n>btnApprove}" press="_onApprove"/>-->
+	<!--<Button id="Reject" type="Reject" text="{i18n>btnReject}" press="_onApprove"/>-->
+	<!--	<VBox class="sapUiSmallMargin">
+		<HBox justifyContent="SpaceBetween" alignItems="Center">
+			<Title text=""/>
+			<Button icon="sap-icon://add" press="onAddDocument"></Button>
+		</HBox>
+		<List id="idDocumentList" items="{document>/}" mode="None" noDataText="No documents found" type="Active">
+			<CustomListItem>
+				<HBox justifyContent="SpaceBetween" alignItems="Center" class="sapUiTinyMargin">
+					<HBox alignItems="Center">
+						<Image src="sap-icon://pdf-attachment" width="1.2rem"/>
+						<Link text="{document>DOCNAME}" emphasized="true" press="onPressDocument" wrapping="false"/>
+						<Text text="{document>CHANGEDT}" class="sapUiSmallMarginBegin"/>
+						<Text text="{document>CHANGTIM}" class="sapUiSmallMarginBegin"/>
+					</HBox>
+				</HBox>
+			</CustomListItem>
+		</List>
+	</VBox>-->
+</mvc:View>

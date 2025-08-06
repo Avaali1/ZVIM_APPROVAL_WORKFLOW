@@ -1,13 +1,43 @@
 {
     "resources": [
         {
-            "name": "../../ZVIM_APPROVAL_WORKFLOW/model/models.js"
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/LineItem/LineItem.view.xml"
         },
         {
             "name": "../../ZVIM_APPROVAL_WORKFLOW/manifest.json"
         },
         {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/LineItem/LineItem.js"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/LineItem/LineItem.controller.js"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/History/History.js"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/Documents/Document.js"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/Comments/Comment.js"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/BasicData/BasicData.js"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/BasicData/BasicData.controller.js"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/model/models.js"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/model/formatter.js"
+        },
+        {
             "name": "../../ZVIM_APPROVAL_WORKFLOW/controller/Main.controller.js"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/controller/BaseController.js"
         },
         {
             "name": "../../ZVIM_APPROVAL_WORKFLOW/Component.js"
@@ -20,15 +50,47 @@
             "merged": true
         },
         {
-            "name": "../../ZVIM_APPROVAL_WORKFLOW/i18n/i18n.properties",
-            "raw": "i18n/i18n.properties"
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/LineItem/LineItem-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/LineItem/LineItem-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/History/History-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/Documents/Document-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/Comments/Comment-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/BasicData/BasicData-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/BasicData/BasicData-dbg.controller.js",
+            "isDebug": true
         },
         {
             "name": "../../ZVIM_APPROVAL_WORKFLOW/model/models-dbg.js",
             "isDebug": true
         },
         {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/model/formatter-dbg.js",
+            "isDebug": true
+        },
+        {
             "name": "../../ZVIM_APPROVAL_WORKFLOW/controller/Main-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/controller/BaseController-dbg.js",
             "isDebug": true
         },
         {
@@ -45,7 +107,38 @@
             "name": "di.code-validation.core_issues.json"
         },
         {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/History/History.view.xml"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/Documents/Document.view.xml"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/Comments/Comment.view.xml"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/SharedBlocks/BasicData/BasicData.view.xml"
+        },
+        {
             "name": "../../ZVIM_APPROVAL_WORKFLOW/view/Main.view.xml"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/fragment/UploadDoc.fragment.xml"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/fragment/RejectDialog.fragment.xml"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/fragment/PDFViewer.fragment.xml"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/fragment/DetailHeader.fragment.xml"
+        },
+        {
+            "name": "../../ZVIM_APPROVAL_WORKFLOW/fragment/ApproveDialog.fragment.xml"
         },
         {
             "name": "../../ZVIM_APPROVAL_WORKFLOW/css/style.css"

@@ -1,0 +1,28 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form" xmlns="sap.m">
+	<VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="basicData" editable=" false" layout=" ResponsiveGridLayout" title="" labelSpanXL=" 3" labelSpanL=" 3" labelSpanM=" 3"
+			labelSpanS=" 12" adjustLabelSpan=" false" emptySpanXL=" 4" emptySpanL=" 4" emptySpanM=" 4" emptySpanS=" 0" columnsXL=" 1" columnsL=" 1"
+			columnsM=" 1" singleContainerFullSize=" false">
+			<f:content>
+				<Label design="Bold" text="{i18n>compCode}"/>
+				<Text text="{header>/BUKRS}"/>
+				<Label design="Bold" text="{i18n>docDate}"/>
+				<Text text="{header>/BLDAT}"/>
+				<Label design="Bold" text="{i18n>docId}"/>
+				<Text text="{header>/DOCID}"/>
+				<Label design="Bold" text="{i18n>ExptypInvc}"/>
+				<Text text="{header>/EXPENSE_TYPE}"/>
+				<Label design="Bold" text="{i18n>grAmt}"/>
+				<Text text="{header>/GROSS_AMOUNT}"/>
+				<Label design="Bold" text="{i18n>NetAmt}"/>
+				<Text text="{header>/NET_AMOUNT}"/>
+				<Label design="Bold" text="{i18n>TaxAmt}"/>
+				<Text text="{headerl>/VAT_AMOUNT}"/>
+				<Label design="Bold" text="{i18n>Vendor}"/>
+				<Text text="{header>/LIFNR}"/>
+				<Label design="Bold" text="{i18n>Currency}"/>
+				<Text text="{header>/WAERS}"/>
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+</mvc:View>

@@ -9,6 +9,26 @@
         },
         "title": "{{appTitle}}",
         "description": "{{appDescription}}",
+        "dataSources": {
+            "localService": {
+                "uri": "./localService/data.json",
+                "type": "JSON"
+            },
+            "ZVIM_APPR_INBOX": {
+                "uri": "/sap/opu/odata/sap/ZVIM_APPR_INBOX_SRV/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "2.0"
+                }
+            },
+            "ZPTP_VENDOR_PORTAL": {
+                "uri": "/sap/opu/odata/sap/ZPTP_VENDOR_PORTAL_SRV/",
+                "type": "OData",
+                "settings": {
+                    "odataVersion": "2.0"
+                }
+            }
+        },
         "sourceTemplate": {
             "id": "ui5template.basicSAPUI5ApplicationProject",
             "version": "1.40.12"
@@ -43,7 +63,11 @@
             "libs": {
                 "sap.ui.layout": {},
                 "sap.ui.core": {},
-                "sap.m": {}
+                "sap.ushell": {},
+                "sap.m": {},
+                "sap.collaboration": {},
+                "sap.ui.comp": {},
+                "sap.uxap": {}
             }
         },
         "contentDensities": {
@@ -56,6 +80,36 @@
                 "settings": {
                     "bundleName": "in.compass.vim.ZVIM_APPROVAL_WORKFLOW.i18n.i18n"
                 }
+            },
+            "server": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request",
+                    "useBatch": true
+                },
+                "dataSource": "ZVIM_APPR_INBOX"
+            },
+            "WorkflowAprvlModel": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZVIM_APPR_INBOX",
+                "preload": true
+            },
+            "VendorPortalModel": {
+                "type": "sap.ui.model.odata.v2.ODataModel",
+                "settings": {
+                    "defaultOperationMode": "Server",
+                    "defaultBindingMode": "OneWay",
+                    "defaultCountMode": "Request"
+                },
+                "dataSource": "ZPTP_VENDOR_PORTAL",
+                "preload": true
             }
         },
         "resources": {
@@ -64,39 +118,10 @@
                     "uri": "css/style.css"
                 }
             ]
-        },
-        "routing": {
-            "config": {
-                "routerClass": "sap.m.routing.Router",
-                "viewType": "XML",
-                "async": true,
-                "viewPath": "in.compass.vim.ZVIM_APPROVAL_WORKFLOW.view",
-                "controlAggregation": "pages",
-                "controlId": "app",
-                "clearControlAggregation": false
-            },
-            "routes": [
-                {
-                    "name": "RouteMain",
-                    "pattern": "RouteMain",
-                    "target": [
-                        "TargetMain"
-                    ]
-                }
-            ],
-            "targets": {
-                "TargetMain": {
-                    "viewType": "XML",
-                    "transition": "slide",
-                    "clearControlAggregation": false,
-                    "viewId": "Main",
-                    "viewName": "Main"
-                }
-            }
         }
     },
     "sap.platform.abap": {
-        "uri": "/sap/bc/ui5_ui5/sap/zvim_wrkflw_apv /webapp",
+        "uri": "/sap/bc/ui5_ui5/sap/zvim_wrkflw_apv/webapp",
         "_version": "1.1.0"
     }
 }

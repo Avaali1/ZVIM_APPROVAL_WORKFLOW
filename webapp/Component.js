@@ -21,10 +21,12 @@ sap.ui.define([
 			UIComponent.prototype.init.apply(this, arguments);
 
 			// enable routing
-			this.getRouter().initialize();
+			//	this.getRouter().initialize();
 
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");
+			// this.setModel(models.createODataModel(), "oDataModel");
+			// this.setModel(models.createVDMGenericModel(), "oDataVDMGenericModel");
 		}
 	});
 });

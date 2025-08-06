@@ -1,0 +1,53 @@
+<mvc:View controllerName="in.compass.vim.ZVIM_APPROVAL_WORKFLOW.controller.Main" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form"
+	xmlns="sap.m">
+	<VBox class="sapUiSmallMargin">
+		<Table id="idTable" inset="false" items="{item>/}" fixedLayout="Strict" growing="true" growingScrollToLoad="true">
+			<columns>
+				<Column minScreenWidth="Tablet" width="6rem" demandPopin="true" hAlign="Center"><Text text="{i18n>glAccount}"/></Column>
+				<Column minScreenWidth="Tablet" width="6rem" demandPopin="true" hAlign="Center"><Text text="{i18n>glText}"/></Column>
+				<Column minScreenWidth="Tablet" width="6rem" demandPopin="true" hAlign="Center"><Text text="{i18n>DebitCredit}"/></Column>
+				<Column minScreenWidth="Tablet" width="6rem" demandPopin="true" hAlign="Center"><Text text="{i18n>Amount}"/></Column>
+				<!--<Column><Text text="{i18n>Name}"/></Column>-->
+				<Column minScreenWidth="Tablet" width="6rem" demandPopin="true" hAlign="Center"><Text text="{i18n>TaxCode}"/></Column>
+				<Column minScreenWidth="Tablet" width="6rem" demandPopin="true" hAlign="Center"><Text text="{i18n>ShortText}"/></Column>
+				<!--<Column><Text text="{i18n>CodFlg}"/></Column>-->
+				<Column minScreenWidth="Tablet" width="6rem" demandPopin="true" hAlign="Center"><Text text="{i18n>compCode}"/></Column>
+				<Column minScreenWidth="Tablet" width="6rem" demandPopin="true" hAlign="Center"><Text text="{i18n>costCtr}"/></Column>
+				<Column minScreenWidth="Tablet" width="6rem" demandPopin="true" hAlign="Center"><Text text="{i18n>lText}"/></Column>
+			</columns>
+			<items>
+				<ColumnListItem>
+					<cells>
+						<!--<VBox>-->
+						<Text text="{item>HKONT}"/>
+						<Text text="{item>GLTXT}"/>
+						<Text text="{item>SHKZG}"/>
+						<ObjectNumber number="{item>WRBTR}" emphasized="true"/>
+						<!--<Text text="{i18n>Name}"/>-->
+						<!--	<HBox>-->
+						<!--		<Text text="{i18n>TaxCode}" class="sapUiTinyMarginEnd"/>-->
+						<!--		<Text text="{item>TAX_CODE1}"/>-->
+						<!--	</HBox>-->
+						<!--	<HBox>-->
+						<!--		<Text text="{i18n>ShortText}" class="sapUiTinyMarginEnd"/>-->
+						<!--		<Text text="{item>SGTXT}"/>-->
+						<!--	</HBox>-->
+						<!--</VBox>-->
+						<!--<ObjectIdentifier title="{CodFlg}"/>-->
+						<Text text="{item>TAX_CODE1}"/>
+						<Text text="{item>SGTXT}"/>
+						<Text text="{item>BUKRS}"/>
+						<Text text="{item>KOSTL}"/>
+						<Text text="{item>LTEXT}"/>
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+		<!-- Pagination like bottom buttons -->
+		<HBox justifyContent="Center" class="sapUiSmallMarginTop">
+			<Button text="20" type="Transparent" press="_onPageItem"/>
+			<Button text="50" type="Transparent" press="_onPageItem"/>
+			<Button text="100" type="Transparent" press="_onPageItem"/>
+		</HBox>
+	</VBox>
+</mvc:View>
