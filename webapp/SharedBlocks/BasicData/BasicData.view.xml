@@ -20,6 +20,8 @@
 				<Text text="{headerl>/VAT_AMOUNT}"/>
 				<Label design="Bold" text="{i18n>Vendor}"/>
 				<Text text="{header>/LIFNR}"/>
+				<Label design="Bold" text="{i18n>VendorName}"/>
+				<Text text="{header>/NAME1}"/>
 				<Label design="Bold" text="{i18n>Currency}"/>
 				<Text text="{header>/WAERS}"/>
 			</f:content>
